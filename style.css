@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  width: 100vw;
+  background-image: url("https://docs.huff.sh/overlay.png");
+  background-position: top center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15vh 10vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+header h1 {
+  font-size: 12vh;
+  line-height: .9;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 3vh;
+  font-weight: 400;
+  margin-top: 1vh;
+  margin-bottom: 0;
+}
+
+.logo {
+  height: 20vh;
+}
+
+.title {
+  font-size: 10vh;
+  font-weight: bold;
+  margin: 0 0 4vh 0;
+}
+
+.link {
+  margin-top: 4vh;
+  background-color: #4242c7;
+  color: #fff;
+  text-decoration: none;
+  padding: 2vh 3vw;
+  border-radius: 8px;
+}
+
+.link:hover {
+  opacity: .9;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15vh 10vw;
+  box-sizing: border-box;
+}
+
+.container p {
+  line-height: 1.25;
+  font-size: 2.5vh;
+  margin: 0;
+}
+
+.nerds {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4vw;
+}
+
+.nerd {
+  display: flex;
+  flex-direction: column;
+}
+
+.nerd img {
+  border-radius: 999px;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.nerd p {
+  margin: 0;
+  text-align: center;
+}
+
+.nerd .nerd-name {
+  font-size: 3vh;
+}
+
+.nerd .nerd-role {
+  opacity: .6;
+  font-size: 2.5vh;
+}
+
+.faq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq li {
+  margin-bottom: 4vh;
+  border-bottom: 2px solid white;
+  padding-bottom: 4vh;
+}
+
+.faq .question {
+  font-size: 3vh;
+  font-weight: 500;
+  margin-bottom: 1vh;
+}
+
+.faq .answer {
+  font-size: 2.25vh;
+}
