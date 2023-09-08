@@ -1,3 +1,7 @@
+:root {
+  --huff-brand: #4242c7;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: black;
@@ -7,22 +11,22 @@ body {
   font-weight: 400;
   text-rendering: geometricPrecision;
   width: 100vw;
-  background-image: url("https://docs.huff.sh/overlay.png");
+  background-image: url("./overlay.png");
   background-position: top center;
   background-size: cover;
 }
 
 header {
   width: 100%;
-  max-width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15vh 10vw;
+  padding: 25vh 0;
   text-align: center;
   box-sizing: border-box;
 }
-
 
 header h1 {
   font-size: 12vh;
@@ -37,35 +41,13 @@ header h2 {
   margin-bottom: 0;
 }
 
-.logo {
-  height: 20vh;
-}
-
-.title {
-  font-size: 10vh;
-  font-weight: bold;
-  margin: 0 0 4vh 0;
-}
-
-.link {
-  margin-top: 4vh;
-  background-color: #4242c7;
-  color: #fff;
-  text-decoration: none;
-  padding: 2vh 3vw;
-  border-radius: 8px;
-}
-
-.link:hover {
-  opacity: .9;
-}
-
 .container {
   width: 100%;
+  max-width: 880px;
+  margin: 14vh auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15vh 10vw;
   box-sizing: border-box;
 }
 
@@ -75,9 +57,65 @@ header h2 {
   margin: 0;
 }
 
+.logo {
+  height: 20vh;
+  margin-bottom: 2vh;
+}
+
+.title {
+  font-size: 10vh;
+  font-weight: bold;
+  margin: 0 0 4vh 0;
+  text-align: center;
+}
+
+.link {
+  margin-top: 4vh;
+  background-color: var(--huff-brand);
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5vh 2.75vw;
+  border-radius: 8px;
+  font-size: 2.25vh;
+  font-weight: 600;
+}
+
+.link:hover {
+  opacity: .9;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.schedule td {
+  font-size: 3vh;
+  padding: 2vh 1vh;
+}
+
+.schedule tr {
+  border-bottom: 2px solid white;
+}
+
+.schedule tr:last-child {
+  border-bottom: none;
+}
+
+.schedule td:first-child {
+  text-align: left;
+}
+
+.schedule td:last-child {
+  font-size: 2.5vh;
+  text-align: right;
+  font-weight: 500;
+}
+
 .nerds {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4vw;
 }
 
@@ -113,17 +151,51 @@ header h2 {
 }
 
 .faq li {
-  margin-bottom: 4vh;
-  border-bottom: 2px solid white;
-  padding-bottom: 4vh;
+  margin-bottom: 2.5vh;
 }
 
-.faq .question {
-  font-size: 3vh;
+.faq li:last-child {
+  border-bottom: none;
+}
+
+.faq li details p {
+  font-weight: 400;
+  margin-top: 2vh;
+  font-size: 2.5vh;
+  margin-left: 4vw;
+}
+
+summary {
   font-weight: 500;
-  margin-bottom: 1vh;
+  cursor: pointer;
+  font-size: 3vh;
 }
 
-.faq .answer {
-  font-size: 2.25vh;
+summary::marker {
+  color: var(--huff-brand);
+  float: right;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.socials h2 {
+  margin-bottom: 0;
+}
+
+.social-link {
+  text-decoration: none;
+  fill: white;
+  transition: fill .2s ease;
+}
+
+.social-link:hover {
+  fill: var(--huff-brand);
+}
+
+.social-icon {
+  height: 4vh;
 }
